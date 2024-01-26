@@ -1,183 +1,186 @@
 .emptyCart {
-    margin: auto;
-    text-align: center;
-    padding: 10vmax;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin: auto;
+  text-align: center;
+  padding: 10vmax;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .emptyCart > svg {
-    font-size: 5vmax;
-    color: #FDD138;
+  font-size: 5vmax;
+  color: #246144;
 }
 .emptyCart > p {
-    font-size: 2vmax;
+  font-size: 2vmax;
 }
 .emptyCart > a {
-    background-color: rgb(51, 51, 51);
-    color: white;
-    border: none;
-    padding: 1vmax 3vmax;
-    cursor: pointer;
-    font: 400 1vmax "Roboto";
-    text-decoration: none;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  border: none;
+  padding: 1vmax 3vmax;
+  cursor: pointer;
+  font: 400 1vmax "Roboto";
+  text-decoration: none;
 }
 
 .cartPage {
-    padding: 70px;
+  padding: 70px;
+  display: flex;
 }
-.cartHeader{
-    background: #FDD138;
-    width: 90%;
-    box-sizing: border-box;
-    margin: auto;
-    color: #000000;
-    display: grid;
-    grid-template-columns: 4fr 1fr 1fr;
-    font: 500 18px "Roboto";
+.cartPageOne {
+  width: 70%;
 }
-.cartHeader > p{
-    margin: 10px;
+.cartHeader {
+  background: #246144;
+  width: 90%;
+  box-sizing: border-box;
+  margin: auto;
+  color: #000000;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  font: 500 18px "Roboto";
 }
-.cartHeader > p:last-child{
-    text-align: end
+.cartHeader > p {
+  margin: 10px;
 }
-.cartContainer{
-    width: 90%;
-    display: grid;
-    margin: auto;
-    grid-template-columns: 4fr 1fr 1fr;
+.cartHeader > p:last-child {
+  text-align: end;
 }
-.cartInput{
-    display: flex;
-    align-items: center;
-    height: 90px;
+.cartContainer {
+  width: 90%;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 4fr 1fr 1fr;
 }
-.cartInput > button{
-    border: none;
-    background: rgba(0, 0, 0, 0.29);
-    color: white;
-    padding: 12px;
-    cursor: pointer;
-    transition: all  0.5s;
+.cartInput {
+  display: flex;
+  align-items: center;
+  height: 90px;
 }
-.cartInput > button:hover{
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.77) 0%, rgba(0, 0, 0, 0.24) 100%);
-    box-shadow: 2px 2px 2px rgba(253, 209, 56, 0.11);
+.cartInput > button {
+  border: none;
+  background: rgba(0, 0, 0, 0.29);
+  color: #246144;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.5s;
 }
-.cartInput >input{
-    border: none;
-    padding: 10px;
-    width: 15px;
-    font: 700  14px "Roboto";
-    color: black;
-    text-align: center;
-    outline: none;
+.cartInput > button:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.77) 0%,
+    rgba(0, 0, 0, 0.24) 100%
+  );
+  box-shadow: 2px 2px 2px rgba(253, 209, 56, 0.11);
 }
-.cartSubtotal{
-    display: flex;
-    padding: 15px;
-    height: 100px;
-    align-items: center;
-    justify-content: flex-end;
-    box-sizing: border-box;
-    font: 500 16px cursive;
+.cartInput > input {
+  border: none;
+  padding: 10px;
+  width: 15px;
+  font: 700 14px "Roboto";
+  color: black;
+  text-align: center;
+  outline: none;
 }
-.cartGrossProfit{
-    display: grid;
-    grid-template-columns: 2fr 1.2fr;
+.cartSubtotal {
+  display: flex;
+  padding: 15px;
+  height: 100px;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  font: 500 16px cursive;
 }
-.cartGrossProfitBox{
-    border-top: 3px solid #FDD138;
-    margin: 15px 70px;
-    box-sizing: border-box;
-    padding: 20px 0;
-    font: 500 16px cursive;
-    display: flex;
-    justify-content: space-between;
+.cartGrossProfit {
+  /* display: grid;
+  grid-template-columns: 2fr 1.2fr; */
+  width: 25%;
+  justify-content: end;
 }
-.checkOutBtn{
-    display: flex;
-    justify-content: flex-end;
+.cartGrossProfitBox {
+  border-top: 3px solid #246144;
+  margin: 15px 70px;
+  box-sizing: border-box;
+  padding: 20px 0;
+  font: 500 16px cursive;
+  display: flex;
+  justify-content: space-between;
 }
-.checkOutBtn > button{
-    background: #FDD138;
-    color: black;
-    border: none;
-    padding: 15px 60px;
-    width: 50%;
-    font: 700 16px "Roboto";
-    margin: 15px 60px;
-    cursor: pointer;
-    border-radius: 30px;
+.checkOutBtn {
+  display: flex;
+  justify-content: flex-end;
 }
-
-
-
-
-
-
-
+.checkOutBtn > button {
+  background: #246144;
+  color: black;
+  border: none;
+  padding: 15px 60px;
+  width: 50%;
+  font: 700 16px "Roboto";
+  margin: 15px 60px;
+  cursor: pointer;
+  border-radius: 30px;
+}
 
 /*cartItemCard*/
 .CartItemCard {
-    display: flex;
-    padding: 20px;
-    height: 8vmax;
-    align-items: flex-start;
-    box-sizing: border-box;
+  display: flex;
+  padding: 20px;
+  height: 8vmax;
+  align-items: flex-start;
+  box-sizing: border-box;
 }
 .CartItemCard > img {
-    width: 5vmax;
+  width: 5vmax;
 }
 
 .CartItemCard > div {
-    display: flex;
-    margin: 3px 15px;
-    flex-direction: column;
+  display: flex;
+  margin: 3px 15px;
+  flex-direction: column;
 }
 
 .CartItemCard > div > a {
-    font: 500 18px cursive;
-    color: rgba(255, 255, 255, 0.81);
-    text-decoration: none;
+  font: 500 18px cursive;
+  color: rgba(255, 255, 255, 0.81);
+  text-decoration: none;
 }
 
 .CartItemCard > div > span {
-    font: 300 15px "Roboto";
-    color: rgba(255, 255, 255, 0.81);
+  font: 300 15px "Roboto";
+  color: rgba(255, 255, 255, 0.81);
 }
 
 .CartItemCard > div > p {
-    color: #FDD138;
-    font: 700 14px "Roboto";
-    cursor: pointer;
+  color: #246144;
+  font: 700 14px "Roboto";
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
-    .CartItemCard {
-        padding: 3vmax;
-        height: 25vmax;
-    }
-    .CartItemCard > img {
-        width: 10vmax;
-    }
+  .CartItemCard {
+    padding: 3vmax;
+    height: 25vmax;
+  }
+  .CartItemCard > img {
+    width: 10vmax;
+  }
 
-    .CartItemCard > div {
-        margin: 1vmax 2vmax;
-    }
+  .CartItemCard > div {
+    margin: 1vmax 2vmax;
+  }
 
-    .CartItemCard > div > a {
-        font: 300 2vmax cursive;
-    }
+  .CartItemCard > div > a {
+    font: 300 2vmax cursive;
+  }
 
-    .CartItemCard > div > span {
-        font: 300 1.9vmax "Roboto";
-    }
+  .CartItemCard > div > span {
+    font: 300 1.9vmax "Roboto";
+  }
 
-    .CartItemCard > div > p {
-        font: 100 1.8vmax "Roboto";
-    }
+  .CartItemCard > div > p {
+    font: 100 1.8vmax "Roboto";
+  }
 }

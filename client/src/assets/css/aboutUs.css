@@ -1,0 +1,42 @@
+/* AboutUs.css */
+
+.about-us-container {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+}
+
+.about-us-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-us-title {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-us-text {
+  line-height: 1.6;
+  color: #555;
+  font-size: 16px;
+}
+
+.about-us-subtitle {
+  color: #007bff;
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+.about-us-team-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-us-team-member {
+  margin-bottom: 10px;
+  color: #777;
+  font-size: 18px;
+}
+
+/* Add more styles as needed */

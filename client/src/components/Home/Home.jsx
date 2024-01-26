@@ -1,64 +1,55 @@
-import React, {Fragment, useEffect, useState} from 'react';
-import {Link, useNavigate} from "react-router-dom";
-import {CgMouse} from "react-icons/cg";
+import React, { Fragment, useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import ProductCard from "../Product/ProductCard.jsx";
-import {getProducts} from "../../APIRequest/ProductAPI.js";
-
-
-
+import { getProducts } from "../../APIRequest/ProductAPI.js";
 
 const Home = () => {
+  const [products, setProducts] = useState([]);
 
-    const [products, setProducts] = useState([]);
+  const navigate = useNavigate();
 
-    const navigate =useNavigate()
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const result = await getProducts();
+        setProducts(result);
+        console.log(result);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+      }
+    };
 
+    fetchProducts();
+  }, []);
 
-    useEffect(() => {
-        const fetchProducts = async () => {
-            try {
-                const result = await getProducts();
-                setProducts(result);
-                console.log(result)
-            } catch (error) {
-                console.error('Error fetching products:', error);
-            }
-        };
+  function seeMoreHandleClick() {
+    navigate("/products");
+  }
 
-        fetchProducts();
+  return (
+    <Fragment>
+      <div className="banner">
+        <p>Welcome to</p>
+        <p style={{ fontSize: "50px", fontWeight: "700" }}>
+          MBSTU ONLINE FOOD SERVICE
+        </p>
+        <h1>FIND AMAZING FOODS HERE</h1>
+      </div>
+      {/* <div className="empty-div"></div> */}
 
-    }, []);
+      <h2 className="homeHeading">Featured Foods</h2>
 
-    function seeMoreHandleClick() {
-        navigate("/products")
-    }
+      <div className="container">
+        {products.data?.map((product) => (
+          <ProductCard key={product._id} product={product} />
+        ))}
+      </div>
 
-    return (
-        <Fragment>
-            <div className="banner">
-                <p>Welcome to Happy Shopping</p>
-                <h1>FIND AMAZING PRODUCTS BELOW</h1>
-
-                <Link to="">
-                    <button>
-                        Scroll <CgMouse/>
-                    </button>
-                </Link>
-            </div>
-            <div className="empty-div"></div>
-
-            <h2 className="homeHeading">Featured Products</h2>
-
-            <div className="container">
-                {products.data?.map((product) => (
-                    <ProductCard key={product._id} product={product}/>
-                ))}
-            </div>
-
-            <button onClick={seeMoreHandleClick} className="seeMore">See more...</button>
-
-        </Fragment>
-    );
+      <button onClick={seeMoreHandleClick} className="seeMore">
+        Go to Foods →
+      </button>
+    </Fragment>
+  );
 };
 
 export default Home;

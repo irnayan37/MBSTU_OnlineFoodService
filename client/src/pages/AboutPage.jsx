@@ -1,14 +1,15 @@
-import React from 'react';
+import React from "react";
 import MetaData from "../components/Layout/MetaData.jsx";
+import AboutUs from "../components/AboutUs/AboutUs.jsx";
 
 const AboutPage = () => {
-    return (
-        <div>
-            <MetaData title="About Us"/>
+  return (
+    <div>
+      <MetaData title="About Us" />
 
-            <h1>About Page</h1>
-        </div>
-    );
+      <AboutUs />
+    </div>
+  );
 };
 
 export default AboutPage;

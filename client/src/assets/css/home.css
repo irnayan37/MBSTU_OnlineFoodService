@@ -1,178 +1,147 @@
 .banner {
-    background-image: url("https://t3.ftcdn.net/jpg/05/35/13/82/360_F_535138292_62ZnI4Hcw37J8Jaeg4E9TzJwUciCwSnp.jpg");
+  background-image: url("https://as1.ftcdn.net/v2/jpg/05/50/76/96/1000_F_550769614_pi2904VUhL177nkioWaX6wbmi5rC7EX5.jpg");
 
-    /*background-image: url("../../assets/images");*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vmin;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: #FDD138;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vmin;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  /* justify-content: start; */
+  padding-top: 260px;
+  color: #fff;
 }
 
 .banner > h1 {
-    margin: 50px;
-    font: 700 42px "Roboto";
+  margin: 50px;
+  font: 500 35px;
 }
 
 .banner > p {
-    font: 300 38px "Lucida Sans";
+  font: 300 38px "Lucida Sans";
 }
 
-.banner > a > button {
-    margin-bottom: 100px;
-    margin-top: 50px;
-    cursor: pointer;
-    background-color: #FDD138;
-    border: 1px solid #FDD138;
-    border-radius: 0;
-    padding: 15px;
-    transition: all 0.5s;
-    width: 120px;
-    font: 600 15px "Roboto";
-    color: black;
-}
-.banner > a > button:hover {
-    background-color: rgba(102, 45, 145, 0.45);
-    color: white;
-    border: 1px solid white;
-
-}
-
-.banner::after {
-    content: "";
-    width: 100vw;
-    height: 100vmin;
-    background-color: #FDD138;
-    position: absolute;
-    top: 0%;
-    left: 0;
-    clip-path: polygon(100% 68%, 0 100%, 100% 100%);
-    max-width: 100%;
-}
-
-.empty-div{
-    height: 100px;
-    background: #FDD138;
-}
+/* .banner::after {
+  content: "";
+  width: 100vw;
+  height: 100vmin;
+  background-color: #246144;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  clip-path: polygon(100% 68%, 0 100%, 100% 100%);
+  max-width: 100%;
+} */
 
 .homeHeading {
-    text-align: center;
-    font-family: Roboto;
-    font-size: 34px;
-    border-bottom: 1px solid #FDD138;
-    width: 350px;
-    padding: 10px;
-    margin: 80px auto;
-    color: #FDD138;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 34px;
+  border-bottom: 1px dashed #246144;
+  width: 350px;
+  padding: 10px;
+  margin: 80px auto;
+  color: #246144;
 }
-
-
 
 .container {
-    display: flex;
-    margin: 20px auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
-
+  display: flex;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
 }
 
-.seeMore{
-    padding:12px 20px;
-    margin: 0 auto;
-    display: block;
-    background: #FDD138;
-    font: 700 15px "Roboto";
-    border: 1px solid #FDD138;
-
+.seeMore {
+  padding: 12px 20px;
+  margin: 0 auto;
+  display: block;
+  background: #246144;
+  font: 700 15px "Roboto";
+  border: 1px solid #246144;
 }
-.seeMore:hover{
-    background: rgba(102, 45, 145, 0.45);
-    border: 1px solid white;
-    color: white;
-
+.seeMore:hover {
+  background: #24614390;
+  border: 1px solid white;
+  color: white;
 }
 
 .productCard {
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin: 12px;
-    transition: all 0.5s;
-    padding-bottom: 15px;
-    background: rgba(54, 54, 54, 0.49);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 12px;
+  transition: all 0.5s;
+  padding-bottom: 15px;
+  background: rgba(54, 54, 54, 0.49);
 }
 
-.productCard >div > img {
-    width: 100%;
-    max-height: 100%;
+.productCard > div > img {
+  width: 100%;
+  max-height: 100%;
 }
 
-.productCardImgDiv{
-    height: 250px;
-    box-sizing: border-box;
+.productCardImgDiv {
+  height: 250px;
+  box-sizing: border-box;
 }
 .productCardDiv {
-    margin: 10px;
+  margin: 10px;
 }
 
 .productCard > div > div {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .productCard > div > div > Span {
-    margin: 5px;
-    font: 500 13px "Roboto";
+  margin: 5px;
+  font: 500 13px "Roboto";
 }
 
 .productCard > div > h3 {
-    font-family: "Roboto";
-    font-size: 24px;
-    margin: 15px 0;
+  font-family: "Roboto";
+  font-size: 24px;
+  margin: 15px 0;
 }
 .productCard > div > p {
-    font-family: "Roboto";
-    font-size: 14px;
-    margin: 10px 0;
+  font-family: "Roboto";
+  font-size: 14px;
+  margin: 10px 0;
 }
 
 .productCard > div > span {
-    color: #ff411e;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 20px;
+  color: #ff411e;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
 }
 
 .productCard:hover {
-    box-shadow: 0 1px 4px #FDD138;
-    transform: translateY(-1vmax);
+  box-shadow: 0 1px 4px #246144;
+  transform: translateY(-1vmax);
 }
 
-
 @media screen and (max-width: 600px) {
-    .productCard > div > p {
-        font-size: 1.7vmax;
-    }
+  .productCard > div > p {
+    font-size: 1.7vmax;
+  }
 
-    .productCard > div > div {
-        margin: 0vmax;
-        display: block;
-    }
+  .productCard > div > div {
+    margin: 0vmax;
+    display: block;
+  }
 
-    .productCard > div > span {
-        font-size: 1.5vmax;
-    }
+  .productCard > div > span {
+    font-size: 1.5vmax;
+  }
 
-    .productCard > div > div > span {
-        margin: 0 0.5vmax;
-        font: 300 1vmax "Roboto";
-    }
+  .productCard > div > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
 }

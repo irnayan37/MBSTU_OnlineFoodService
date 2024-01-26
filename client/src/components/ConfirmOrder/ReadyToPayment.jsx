@@ -11,27 +11,34 @@ import {
 const ConfirmOrder = () => {
   const shippingInfo = getShippingInfo();
   const userDetails = getUserDetails();
-  // const cartItems = getCart();
+  const cartItems = getCart();
 
   const address = `${shippingInfo?.address}, ${shippingInfo?.city}, ${shippingInfo?.state}, ${shippingInfo?.pinCode}, ${shippingInfo?.country}`;
 
-  // const subtotal = cartItems.reduce(
-  //   (acc, item) => acc + item.price * item.quantity,
-  //   0
-  // );
+  const subtotal = cartItems.reduce(
+    (acc, item) => acc + item.price * item.quantity,
+    0
+  );
 
-  // const shippingCharges = subtotal > 1000 ? 10 : 5;
-  // const tax = 0;
-  // const totalPrice = subtotal + tax + shippingCharges;
+  const shippingCharges = subtotal > 1000 ? 10 : 5;
+  const tax = 0;
+  const totalPrice = subtotal + tax + shippingCharges;
 
   const navigate = useNavigate();
-  const readyToPayment = async () => {
-    navigate("/order/confirm/payment");
+  const proceedToPayment = async () => {
+    const data = {
+      subtotal,
+      shippingCharges,
+      tax,
+      totalPrice,
+    };
+    await setConfirmOrder(data);
+    navigate("/process/payment");
   };
   return (
     <Fragment>
       <div className="confirmOrderPage">
-        <div>
+        {/* <div>
           <div className="confirmShippingArea">
             <Typography>Shipping Info :</Typography>
             <div className="confirmShippingAreaBox">
@@ -65,15 +72,11 @@ const ConfirmOrder = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/*2nd part*/}
 
-        <div className="orderSummary">
-          <button onClick={readyToPayment}>Ready To Payment</button>
-        </div>
-
-        {/* <div>
+        <div>
           <div className="orderSummary">
             <Typography>Order Summery</Typography>
             <div>
@@ -96,7 +99,7 @@ const ConfirmOrder = () => {
 
             <button onClick={proceedToPayment}>Proceed To Payment</button>
           </div>
-        </div> */}
+        </div>
       </div>
     </Fragment>
   );
