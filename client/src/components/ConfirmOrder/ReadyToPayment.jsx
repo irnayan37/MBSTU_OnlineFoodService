@@ -37,7 +37,7 @@ const ConfirmOrder = () => {
   };
   return (
     <Fragment>
-      <div className="confirmOrderPage">
+      <div >
         {/* <div>
           <div className="confirmShippingArea">
             <Typography>Shipping Info :</Typography>
@@ -77,8 +77,8 @@ const ConfirmOrder = () => {
         {/*2nd part*/}
 
         <div>
-          <div className="orderSummary">
-            <Typography>Order Summery</Typography>
+          <div className="orderSummary ">
+            <Typography>Order Summary</Typography>
             <div>
               <div>
                 <p>Subtotal:</p>

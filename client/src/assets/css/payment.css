@@ -2,14 +2,14 @@
   max-width: 400px;
   margin: 50px auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 5px solid #0e0202;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 12px 10px rgba(12, 7, 7, 0.1);
 }
 
 .bkash-payment-title {
   color: #333;
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -17,7 +17,7 @@
 .bkash-payment-label {
   display: block;
   margin-bottom: 10px;
-  color: #555;
+  color: #0d0404;
 }
 
 .bkash-payment-input {

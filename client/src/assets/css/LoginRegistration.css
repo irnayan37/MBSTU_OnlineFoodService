@@ -1,5 +1,5 @@
 .LoginSignUpContainer {
-  background: #fff;
+  background: #fcfcfc;
   width: 100vw;
   height: 100vh;
   max-width: 100%;
@@ -23,7 +23,7 @@
   display: flex;
 }
 .login_signUp_toggle > p {
-  font: 500 16px "Roboto";
+  font: 800 16px "Roboto";
   padding: 20px;
   transition: all 0.5s;
   cursor: pointer;
@@ -32,11 +32,11 @@
   width: 100%;
 }
 .login_signUp_toggle > p:hover {
-  color: #246144;
+  color: #612458;
 }
 
 .LoginSignUpBox > div > button {
-  background-color: #246144;
+  background-color: #31d888;
   height: 3px;
   width: 50%;
   border: none;
@@ -85,15 +85,15 @@
 }
 
 .loginForm > a {
-  color: #246144;
+  color: #090a0b;
   text-decoration: none;
   align-self: flex-end;
   transition: all 0.5s;
-  font: 500 15px "Gill Sans";
+  font: 800 20px "Gill Sans";
 }
 
 .loginForm > a:hover {
-  color: #246143bd;
+  color: #d1e0d9bd;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.08);
 }
 
@@ -129,9 +129,9 @@
 .loginBtn,
 .signUpBtn {
   border: none;
-  background-color: #246144;
-  color: black;
-  font: 500 16px "Roboto";
+  background-color: #6ee4ad;
+  color: rgb(3, 13, 20);
+  font: 800 16px "Roboto";
   width: 100%;
   padding: 0.8vmax;
   cursor: pointer;
@@ -189,7 +189,7 @@
 
   .loginBtn,
   .signUpBtn {
-    font: 300 16px "Roboto";
+    font: 500 16px "Roboto";
     padding: 12px;
   }
 }

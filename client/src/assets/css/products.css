@@ -7,7 +7,7 @@
   width: 280px;
   border-bottom: 1px dashed #246144;
   padding: 20px;
-  color: #246144;
+  color: #1a432f;
   font: 700 42px "Roboto";
   text-align: center;
 }
@@ -26,7 +26,7 @@
 .page-item {
   list-style: none;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  padding: 15px 25px;
+  padding: 20px 25px;
   transition: all 0.3s;
   cursor: pointer;
 }
@@ -46,7 +46,7 @@
 
 .page-link:hover,
 .page-item:hover {
-  background: #2461438d;
+  background: #6fdda68d;
 }
 
 .page-item:hover .page-link {
@@ -54,7 +54,7 @@
 }
 
 .pageItemActive {
-  background: #246144;
+  background: #6fe2ab;
   color: #fff;
 }
 .pageLinkActive {

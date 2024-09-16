@@ -7,6 +7,7 @@
   flex-direction: column;
   height: 100vh;
   margin-bottom: -30px;
+  border-radius: 10px;
 }
 
 .shippingBox {
@@ -14,16 +15,19 @@
   height: 80vh;
   box-sizing: border-box;
   overflow: hidden;
-  box-shadow: 8px 3px 8px 8px #24614233;
+  box-shadow: 20px 20px 20px 20px #000a0533;
+  border: 5px solid rgb(3, 82, 139);
+  border-radius: 20px;
 }
 
 .shippingHeading {
   text-align: center;
-  font: 400 1.3vmax "Roboto";
+  font: 800 1.3vmax "Roboto";
   padding: 1.3vmax;
   border-bottom: 1px solid #fff;
   width: 50%;
   margin: auto;
+  background: #76f9ba;
 }
 
 .shippingForm {
@@ -58,14 +62,14 @@
   position: absolute;
   transform: translateX(16px);
   font-size: 24px;
-  color: rgba(0, 0, 0, 0.623);
+  color: rgba(146, 10, 10, 0.623);
 }
 
 .shippingBtn {
   border: none;
-  background-color: #246144;
+  background: #76f9ba;
   color: black;
-  font: 500 16px "Roboto";
+  font: 900 16px "Roboto";
   width: 100%;
   padding: 0.8vmax;
   cursor: pointer;

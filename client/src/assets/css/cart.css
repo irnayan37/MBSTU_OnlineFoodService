@@ -21,7 +21,7 @@
   border: none;
   padding: 1vmax 3vmax;
   cursor: pointer;
-  font: 400 1vmax "Roboto";
+  font: 600 1vmax "Roboto";
   text-decoration: none;
 }
 
@@ -33,14 +33,14 @@
   width: 70%;
 }
 .cartHeader {
-  background: #246144;
-  width: 90%;
+  background: #76f9ba;
+  width: 100%;
   box-sizing: border-box;
   margin: auto;
-  color: #000000;
+  color: #030402;
   display: grid;
   grid-template-columns: 4fr 1fr 1fr;
-  font: 500 18px "Roboto";
+  font: 100 24px "Roboto";
 }
 .cartHeader > p {
   margin: 10px;
@@ -113,13 +113,13 @@
   justify-content: flex-end;
 }
 .checkOutBtn > button {
-  background: #246144;
+  background: #76f9ba;
   color: black;
   border: none;
-  padding: 15px 60px;
+  padding: 15px 12px;
   width: 50%;
-  font: 700 16px "Roboto";
-  margin: 15px 60px;
+  font: 900 16px "Roboto";
+  margin: 12px 32px;
   cursor: pointer;
   border-radius: 30px;
 }

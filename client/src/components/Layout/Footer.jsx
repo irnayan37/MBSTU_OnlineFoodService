@@ -15,7 +15,7 @@ const Footer = () => {
 
       <div className="midFooter">
         <h1>MBSTU</h1>
-        <h2>ONLINE FOOD ORDERING</h2>
+        <h2>ONLINE FOOD SERVICE</h2>
         <p>
           Copyrights 2024 &copy; <b>Noyon Hossain</b>
           <b> && Abu Bakar Siddique Nayan</b>

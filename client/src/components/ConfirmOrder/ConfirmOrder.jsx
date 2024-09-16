@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Typography } from "@material-ui/core";
+import { Grid } from '@material-ui/core';
 import {
   getCart,
   getShippingInfo,
@@ -57,10 +58,16 @@ const ConfirmOrder = () => {
                 <div key={item.id}>
                   <img src={item.image} alt="Product" />
                   <Link to={`/product/${item.id}`}>{item.name}</Link>{" "}
-                  <span>
-                    {item.quantity} X ৳{item.price} ={" "}
-                    <b>৳{item.price * item.quantity}</b>
-                  </span>
+                 
+                  <Grid container alignItems="center">
+            <Grid item xs={2}>
+                {item.quantity} X ৳{item.price}
+            </Grid>
+            <Grid item xs={2}>
+                = ৳{item.price * item.quantity}
+            </Grid>
+        </Grid>
+               
                 </div>
               ))}
             </div>
